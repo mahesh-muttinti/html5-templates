@@ -1,0 +1,331 @@
+:root {
+    font-family: sans-serif;
+    font-size: 62.5%;
+    --primary-color: #6427a5e3;
+    --primary-color-100: #6427a5;
+    --secondary-color: #fffdfd;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    min-height: 100vh;
+    min-width: 100%;
+    font-size: 2.1rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+.hero-container {
+    min-height: 70vh;
+    min-width: 100%;
+    background-image: url('../assets/heading-bg.png');
+    background-size: cover;
+    color: var(--secondary-color);
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.hero-text {
+    margin-right: 5em;
+    text-align: justify;
+}
+
+.hero-container div > h1 {
+    position: relative;
+    text-align: right;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.hero-container div > p {
+    position: relative;
+    text-align: right;
+}
+
+.hero-container div > h1::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 5px;
+    width: 2em;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
+.section {
+    display: flex;
+    font-size: 1rem;
+}
+
+.section.section1 {
+    color: var(--primary-color);
+    flex-flow: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 3em;
+    margin: 10rem 20rem;
+}
+
+.section.section1 > * {
+    flex: 1 1 20%;
+    min-width: 20rem;
+}
+
+.section.section1 p {
+    font-size: 1.5em;
+}
+
+.section.section1 h3 {
+    font-size: 1.8em;
+}
+
+.remove-bold {
+    font-weight: lighter !important;
+}
+
+.section.section2 {
+    height: 100vh;
+    background-image: url('../assets/third-section-bg.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0 4em;
+    color: var(--secondary-color);
+}
+
+.section.section2 div+div {
+    width: 50em;
+    text-align: justify;
+}
+
+.section.section2 div+div h2{
+    font-size: 2.3em;
+    line-height: 10px !important;
+}
+
+.section.section2 div+div > p {
+    font-size: 1.5em;
+}
+
+.section.section3{
+    height: 80vh;
+    background-image: url('../assets/fourth-section-bg.png');
+    background-size: 100% -10vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section.section3 div:first-child {
+    background-color: #eee;
+}
+
+.section.section3 div:nth-child(2) {
+    background-color: #ccc;
+}
+
+.section.section3 div:nth-child(3) {
+    background-color: #aaa;
+}
+
+.section.section3 div:last-child {
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color-100);
+    color: var(--secondary-color);
+    flex: 0 1 22em;
+    min-height: 340px;
+    font-size: 1.2rem;
+}
+
+.section.section3 div:last-child button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 0;
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    font-size: 1.4em;
+    outline: 0;
+}
+
+.section.section3 div > h3,
+.section.section3 div > p {
+    padding: 0 0 0 2em;
+}
+
+.section.section3 div > h3 {
+    font-size: 1.5em;
+}
+
+.section.section3 div > p {
+    font-size: 1.4em;
+}
+
+.section.section4 {
+    height: 100vh;
+    background-image: url('../assets/fivth-section-bg.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0 3em;
+    color: var(--secondary-color);
+}
+
+.section.section4 div {
+    width: 50em;
+    text-align: right;
+}
+
+.section.section4 div h2{
+    font-size: 2.3em;
+    line-height: 10px !important;
+}
+
+.section.section4 div > p {
+    font-size: 1.5em;
+}
+
+.section.section4 div+div img{
+    float: left;
+}
+
+
+.section.section5 {
+    height: 50vh;
+    width: 100%;
+    background-image: url('../assets/sixth-section-bg.png');
+    background-size: cover;
+    background-position: 50% -10vw;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0 3em;
+    color: var(--primary-color);
+    margin: 5em;
+    padding-left: 5vw;
+}
+.section.section5 > *{
+    flex: 1 1 40%;
+}
+
+.contact-type {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.contact-type > * {
+    margin-bottom: 2rem;
+}
+
+.contact-type > i {
+    border: 2px solid ;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-control {
+    display: flex;
+    flex-flow: wrap;
+    gap: 2rem;
+}
+
+.form-control input {
+    flex: 1 1 20%;
+    border: 1.5px solid lightgray;
+    padding: 1rem 1rem;
+    border-radius: 50px;
+    outline: 0;
+    font-size: 1.7em;
+}
+
+.form-control textarea {
+    outline: 0;
+    border: 1.5px solid lightgray;
+    border-radius: 15px;
+    flex: 1 1 100%;
+    min-width: 10rem;
+    resize: none;
+    font-size: 1.7em;
+    padding: 1rem;
+    font-family: sans-serif;
+}
+
+.form-control > button {
+    flex: 0 1 auto;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 0;
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    font-size: 1.4em;
+    outline: 0;
+    text-transform: uppercase;
+}
+
+
+footer {
+    min-height: 35vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url('../assets/footer-bg.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 100%;
+    padding: 4em 0 1em;
+    color: var(--secondary-color);
+    font-size: 1.7rem;
+}
+
+.icon-wrapper {
+    display: flex;
+    gap: 1rem;
+}
+
+.icon-wrapper > i {
+    background-color: var(--secondary-color);
+    width: 4.5rem;
+    height: 4.5rem;
+    display: inherit;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--primary-color);
+}
+
+
